@@ -202,9 +202,6 @@ async def show_queue(ctx):
 
 
 @bot.command(name="change")
-#async def changing(ctx):
-    #while 1==1:
-        #await ctx.guild.me.edit(nick=random.choice(["haha", "funny", "patrick", "Ben Ghazi", "When the"]))
 async def cap_permutations(ctx):
     lu_sequence = ((c.lower(), c.upper()) for c in ctx.message.content.replace("!change", ""))
     possible = [''.join(x) for x in it.product(*lu_sequence)]
